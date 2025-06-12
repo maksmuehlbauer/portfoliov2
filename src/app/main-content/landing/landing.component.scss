@@ -65,7 +65,6 @@
 }
 
 .social-link-box {
-    width: 40px;
     position: absolute;
     @include display($ai: flex-end);
     gap: 30px;
@@ -75,6 +74,11 @@
     img {
         width: 30px;
         object-fit: cover;
+        transition: 250ms transform ease-in-out;
+        &:hover {
+            cursor: pointer;
+            transform: translateX(-10px);
+        }
     }
 }
 

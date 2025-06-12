@@ -2,14 +2,12 @@
 
 .main-content-box {
     width: 100%;
-    // @include display();
     max-width: 1440px;
     background-color: aliceblue;
 }
 
 .header {
     @include display($jc:space-between);
-    // background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     width: 1440px;
     height: 117px;
@@ -26,6 +24,7 @@
 h3 {
     width: 140px;
     cursor: pointer;
+    text-align: right;
     &:hover {
         font-weight: 800;
     }

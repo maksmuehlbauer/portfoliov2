@@ -22,12 +22,23 @@ button {
     padding: 15px 30px;
     border-radius: 10px;
     border: 2px solid $main-color;
+    background-color: white;
+    text-decoration: none;  
+    filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2)); 
+  transition: all 125ms;
+    &:hover {
+    cursor: pointer;
+      background: radial-gradient(circle at top left, #FF5959 0%, #FF5959 50%, #DE0000 100%);
+      color: $color-white;
+      transform: scale(1.1);
+      transform-origin: top left;
+    }
 }
 
 h2 {
     font-family: 'Baloo 2', 'Poppins';
     font-size: 96px;
-    font-weight: 400;
+    font-weight: 900;
     letter-spacing: 1%;
     color: $main-color;
 }

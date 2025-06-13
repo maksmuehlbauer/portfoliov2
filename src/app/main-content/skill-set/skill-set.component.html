@@ -1,0 +1,15 @@
+<div class="background">
+    <div class="flex-center">
+        <div class="desk-max-width">
+            <div class="main-content-box">
+                <h2>Skill set</h2>
+                <div class="skills-box">
+                    <div *ngFor="let skill of skillsData.skillList" class="single-skill-box">
+                        <img src="./assets/img/my-skills/{{ skill.icon }}" alt="skill-logo">
+                        <p>{{ skill.name }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

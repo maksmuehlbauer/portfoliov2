@@ -1,0 +1,19 @@
+@import './../../../styles.scss';
+
+.main-content-box {
+    width: 100%;
+    margin: 111px 0;
+}
+
+.single-project {
+    @include display($ai: flex-end);
+    gap: 38px;
+    height: 460px;
+    margin-top: 35px;
+}
+
+.odd-row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+

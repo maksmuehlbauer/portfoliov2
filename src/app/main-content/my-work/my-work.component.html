@@ -1,0 +1,18 @@
+<div class="flex-center">
+    <div class="desk-max-width">
+        <div class="main-content-box">
+            <div>
+                <h2>My Work</h2>
+                <h3>Feel fre to try out my latest development projects and look into their code</h3>
+                @for(project of projectsData.projectList; track project.title; let i = $index) {
+                    <app-single-work 
+                    [projectData]="project" 
+                    [itemIndex]="i"
+                    [ngClass]="getDirection(i)"
+                    class="single-project"
+                    ></app-single-work>
+                }                
+            </div>
+        </div>
+    </div>
+</div>

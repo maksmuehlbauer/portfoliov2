@@ -1,0 +1,13 @@
+<div class="img-box" [ngClass]="imgBoxAlign(itemIndex)">
+    <img src="{{ projectData.img }}" alt="project-icon">
+</div>
+
+<div class="text-box" [ngClass]="textBoxAlign(itemIndex)">
+    <span class="project-title">{{ projectData.title }}</span>
+    <h3>{{ projectData.languages }}</h3>
+    <p>{{ projectData.descriptionen }}</p>
+    <div class="button-box">
+        <button class="bg-color">Live test</button>
+        <button>Github</button>
+    </div>
+</div>

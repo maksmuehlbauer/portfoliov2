@@ -1,34 +1,60 @@
-<div class="flex-center">
-    <div class="desk-max-width">
-        <div class="main-content-box">
-            <div class="text-box">
-                <h2>Contact</h2>
-                <span class="secondary-title">Got a problem to solve?</span>
-                <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
-                <span class="contact-offer">Need a Frontend developer? <b>Contact me!</b></span>
-            </div>
+<div class="background">
+    <div class="flex-center">
+        <div class="desk-max-width">
+            <div class="main-content-box">
+                <div class="text-box">
+                    <h2>Contact</h2>
+                    <span class="secondary-title">Got a problem to solve?</span>
+                    <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
+                    <span class="contact-offer">Need a Frontend developer? <b>Contact me!</b></span>
+                </div>
 
-            <form>
-                <div class="input-box">
-                    <input type="text" name="username" id="name" required placeholder="">
-                    <label for="name">your name</label>
-                </div>
-                <div class="input-box">
-                    <input type="email" name="email" id="email" required placeholder="">
-                    <label for="email">your email</label>
-                </div>
-                <div class="input-box">
-                    <textarea minlength="10" name="usermessage" type="message" id="message" placeholder="" required></textarea>
-                    <label for="message">your message</label>
-                </div>
-                <div class="check-box">
-                    <img (click)="checkBoxState()" [src]="checkBoxAccepted ? './assets/img/contact/checkbox-checked.png' : './assets/img/contact/checkbox-empty.png'" alt="">
-                    <span class="check-box-txt">I've read the privacy policy and agree to the processing of my data as outlined.</span>
-                </div>
-                <button disabled>Say hello ;)</button>
-                
-                
-            </form>
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="input-box">
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="username" id="name" required placeholder="" minlength="2">
+                        <label for="name">your name</label>
+                        @if (name.dirty) {
+                            <div class="icon-box">
+                                <img *ngIf="name.errors?.['required']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="name.errors?.['minlength']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="name.valid" src="./../../../assets/img/contact/done.png">
+                            </div>
+                        }
+                    </div>
+                    <div class="input-box">
+                        <input #mail="ngModel" [(ngModel)]="contactData.mail" type="email" name="email" id="email" required placeholder="" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <label for="email">your email</label>
+                        @if (mail.dirty) {
+                            <div class="icon-box">
+                                <img *ngIf="mail.errors?.['required']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="mail.errors?.['pattern']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="mail.valid" src="./../../../assets/img/contact/done.png">
+                            </div>
+                        }
+                    </div>
+                    <div class="input-box">
+                        <textarea #message="ngModel" [(ngModel)]="contactData.message" minlength="10" name="usermessage" type="message" id="message" placeholder="" minlength="10" required></textarea>
+                        <label class="textarea-label" for="message">your message</label>
+                        @if (message.dirty) {
+                            <div class="icon-box">
+                                <img *ngIf="message.errors?.['required']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="message.errors?.['minlength']" src="./../../../assets/img/contact/error.png">
+                                <img *ngIf="message.valid" src="./../../../assets/img/contact/done.png">
+                            </div>
+                        }
+                    </div>
+                    <div class="check-box">
+                        <input #privacy="ngModel" [(ngModel)]="contactData.privacy" type="checkbox" name="privacy" id="privacyCheckbox" required>
+                        <label for="privacyCheckbox">
+                            <img (click)="checkBoxState()" [src]="privacy.valid ? './assets/img/contact/checkbox-checked.png' : './assets/img/contact/checkbox-empty.png'" alt="checkbox">
+                        </label>
+                        <span class="check-box-txt">I've read the privacy policy and agree to the processing of my data as outlined.</span>
+                    </div>
+                    <button>Say hello ;)</button>
+                    
+                    
+                </form>
+            </div>
         </div>
     </div>
 </div>

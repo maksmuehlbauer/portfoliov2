@@ -19,6 +19,10 @@
                                 <img *ngIf="name.errors?.['minlength']" src="./../../../assets/img/contact/error.png">
                                 <img *ngIf="name.valid" src="./../../../assets/img/contact/done.png">
                             </div>
+                            <div class="error-msgs-box">
+                                <span *ngIf="name.errors?.['required']" class="error-txt">name is required</span>
+                                <span *ngIf="name.errors?.['minlength']" class="error-txt">a minimum of 2 characters is required</span>
+                            </div>
                         }
                     </div>
                     <div class="input-box">
@@ -50,7 +54,7 @@
                         </label>
                         <span class="check-box-txt">I've read the privacy policy and agree to the processing of my data as outlined.</span>
                     </div>
-                    <button>Say hello ;)</button>
+                    <button [disabled]="!contactForm.valid">Say hello ;)</button>
                     
                     
                 </form>

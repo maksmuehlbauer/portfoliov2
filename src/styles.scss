@@ -27,8 +27,14 @@ button {
     text-decoration: none;  
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2)); 
     transition: all 125ms;
-    &:hover {
-    cursor: pointer;
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      background-color: #e0e0e0;
+      color: #999;
+    }
+    &:hover:not(:disabled) {
+      cursor: pointer;
       background: radial-gradient(circle at top left, #FF5959 0%, #FF5959 50%, #DE0000 100%);
       color: $color-white;
       transform: scale(1.1);

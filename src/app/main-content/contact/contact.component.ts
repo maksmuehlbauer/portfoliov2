@@ -24,13 +24,47 @@ export class ContactComponent {
   }
 
   http = inject(HttpClient)
+  mailTest = false;
+  isHovered:boolean = false;
+
+    post = {
+    endPoint: 'https://maximilian-muehlbauer.de/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
 
   checkBoxState() {
     this.checkBoxAccepted = !this.checkBoxAccepted
   }
 
   onSubmit(ngForm: NgForm) {
-    console.log(this.contactData)
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            // this.userFeedback();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => 
+            console.log('send post complete'),
+          });
+          ngForm.resetForm();
+    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+
+      ngForm.resetForm();
+    }
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth'})
   }
 
 }

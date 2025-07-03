@@ -2,13 +2,17 @@
     <div class="flex-center">
         <div class="desk-max-width">
             <div class="main-content-box">
+                <img 
+                (click)="scrollToTop()" 
+                (mouseenter)="isHovered = true" (mouseleave)="isHovered = false"
+                class="to-top-btn" [src]="isHovered ? './assets/img/contact/to-top-hover.png' : './assets/img/contact/to-top.png'" alt="jump to top button">
                 <div class="text-box">
                     <h2>Contact</h2>
                     <span class="secondary-title">Got a problem to solve?</span>
                     <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
                     <span class="contact-offer">Need a Frontend developer? <b>Contact me!</b></span>
                 </div>
-
+                
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="input-box">
                         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="username" id="name" required placeholder="" minlength="2">
@@ -34,6 +38,10 @@
                                 <img *ngIf="mail.errors?.['pattern']" src="./../../../assets/img/contact/error.png">
                                 <img *ngIf="mail.valid" src="./../../../assets/img/contact/done.png">
                             </div>
+                            <div class="error-msgs-box">
+                                <span *ngIf="mail.errors?.['required']" class="error-txt">e-mail is required</span>
+                                <span *ngIf="mail.errors?.['pattern']" class="error-txt">The mail adress is not valid "info&#64;example.de"</span>
+                            </div>
                         }
                     </div>
                     <div class="input-box">
@@ -45,6 +53,10 @@
                                 <img *ngIf="message.errors?.['minlength']" src="./../../../assets/img/contact/error.png">
                                 <img *ngIf="message.valid" src="./../../../assets/img/contact/done.png">
                             </div>
+                            <div class="error-msgs-box">
+                                <span *ngIf="message.errors?.['required']" class="error-txt">a message is required</span>
+                                <span *ngIf="message.errors?.['minlength']" class="error-txt"> please describe your problem</span>
+                            </div>
                         }
                     </div>
                     <div class="check-box">
@@ -55,8 +67,6 @@
                         <span class="check-box-txt">I've read the privacy policy and agree to the processing of my data as outlined.</span>
                     </div>
                     <button [disabled]="!contactForm.valid">Say hello ;)</button>
-                    
-                    
                 </form>
             </div>
         </div>

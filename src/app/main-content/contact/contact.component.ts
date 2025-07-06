@@ -24,7 +24,7 @@ export class ContactComponent {
   }
 
   http = inject(HttpClient)
-  mailTest = false;
+  mailTest = true;
   isHovered:boolean = false;
 
     post = {
@@ -54,11 +54,11 @@ export class ContactComponent {
             console.error(error);
           },
           complete: () => 
-            console.log('send post complete'),
+            console.log('send post complete')
           });
           ngForm.resetForm();
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      console.log('send Testmode')
       ngForm.resetForm();
     }
   }

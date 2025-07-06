@@ -5,11 +5,12 @@ import { SkillSetComponent } from "./skill-set/skill-set.component";
 import { MyWorkComponent } from "./my-work/my-work.component";
 import { ContactComponent } from "./contact/contact.component";
 import { FooterComponent } from "../shared/footer/footer.component";
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [LandingComponent, AboutMeComponent, SkillSetComponent, MyWorkComponent, ContactComponent, FooterComponent],
+  imports: [LandingComponent, AboutMeComponent, SkillSetComponent, MyWorkComponent, ContactComponent],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })

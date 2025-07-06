@@ -4,6 +4,7 @@
     background-image: url(./../../../assets/img/footer/footer-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 291px;
 }
 
 .main-content-box {
@@ -17,15 +18,45 @@
     @include display();
     flex-direction: column;
     gap: 29px;
+    margin-top: 42px;
     >h3 {
         color: $color-white
     }
     >p {    
-        color: $color-white 
+        color: $color-white;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 4px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: -30%;
+            opacity: 0;
+            width: 70%;
+            height: 2px;
+            background-color: $color-white;
+            transition: all 125ms ease-in-out;
+        }
+        &:hover {
+            font-weight: 600;
+            cursor: pointer;
+            &::after {
+                opacity: 1;
+                left: 15%;
+            }
+        }
     }
 }
 
 .social-link-box {
     @include display();
     gap: 42px;
+    >img {
+        transform: scale(1.0);
+        transition: transform 125ms ease-in-out;
+        &:hover {
+        transform: scale(1.3);
+        }
+    }
 }

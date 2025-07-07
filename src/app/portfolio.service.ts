@@ -18,7 +18,6 @@ export class PortfolioService {
     { icon: 'auto.png', name: 'Material Design' },
     { icon: 'api.png', name: 'Rest-Api' },     
     { icon: 'scrum.png', name: 'Scrum' }
-    // { icon: 'wordpress.png', name: 'WordPress' }
   ];
 
    projectList = [

@@ -1,0 +1,54 @@
+@import './../../styles.scss';
+
+.main-content-box {
+    margin-top: 120px;
+}
+
+.imprint-title {
+    font-family: 'Baloo 2', 'Poppins';
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    color: $main-color;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    color: $main-color;
+    li {
+        padding: 3.2px 0 0 0;
+    }
+}
+
+.mb-16 {
+    margin-bottom: 16px;
+}
+
+.mb-120 {
+    margin-bottom: 120px !important;
+}
+
+.imprint-card {
+    @include display($ai: flex-start);
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 24px 0;
+    a {
+        font-family: 'Montserrat', Helvetica, sans-serif;
+        color: $main-color;
+        text-decoration: none;
+        @include display();
+        gap: 16px;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    >.row-1, .row-2 {
+        @include display();
+        gap: 16px;
+    }
+}
+
+

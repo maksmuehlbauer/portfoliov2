@@ -1,5 +1,11 @@
 @import './../../../styles.scss';
 
+:host {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .background {
     background-image: url(./../../../assets/img/footer/footer-bg.svg);
     background-repeat: no-repeat;

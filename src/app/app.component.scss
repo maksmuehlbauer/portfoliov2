@@ -1,0 +1,14 @@
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    padding-bottom: 291px;    /* Footer height */
+}
+
+// @media (min-width: 1440px) {
+//     .content-wrap {
+//         padding-bottom: 288px;    /* Footer height */
+//     }
+// }

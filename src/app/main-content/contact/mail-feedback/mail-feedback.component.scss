@@ -1,0 +1,32 @@
+@import './../../../../styles.scss';
+
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    @include display();
+    opacity: 0;
+    animation: feedback-animation 5s;
+}
+
+@keyframes feedback-animation {
+    0% { opacity: 0 }
+    20% { opacity: 1 }
+    80% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
+
+
+h4 {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 24px 48px;
+    background-color: $main-color;
+    color: $color-white;
+    border-radius: 10px;
+    animation: fadeInOut;
+}

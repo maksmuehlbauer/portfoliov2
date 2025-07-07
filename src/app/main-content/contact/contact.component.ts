@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { ContactForm } from '../../contact.interface';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { MailFeedbackComponent } from "./mail-feedback/mail-feedback.component";
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, MailFeedbackComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -26,8 +27,16 @@ export class ContactComponent {
   http = inject(HttpClient)
   mailTest = true;
   isHovered:boolean = false;
+  userMessageSend:boolean = false;
 
-    post = {
+  mailFeedback() {
+    this.userMessageSend = !this.userMessageSend
+    setTimeout(() => {
+      this.userMessageSend = !this.userMessageSend
+    }, 5000);
+  }
+
+  post = {
     endPoint: 'https://maximilian-muehlbauer.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
@@ -59,6 +68,7 @@ export class ContactComponent {
           ngForm.resetForm();
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log('send Testmode')
+      this.mailFeedback();
       ngForm.resetForm();
     }
   }

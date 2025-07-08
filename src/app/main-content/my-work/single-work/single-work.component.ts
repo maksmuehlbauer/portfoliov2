@@ -11,13 +11,13 @@ import { CommonModule } from '@angular/common';
 export class SingleWorkComponent {
 
 @Input() projectData = {
-      img: './assets/img/my-projects/join.png',
-      title: 'Join',
-      languages: 'Angular | TypeScript | HTML | CSS',
-      descriptionen: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      descriptionde: 'Aufgabenmanager inspiriert vom Kanban-System. Aufgaben mit Drag-and-Drop-Funktionen erstellen und organisieren, Benutzer und Kategorien zuweisen.',
-      projecturl: 'https://join.maximilian-muehlbauer.de/index.html',
-      githuburl: 'https://github.com/maksmuehlbauer/Join_Gruppenarbeit'
+      img: '',
+      title: '',
+      languages: '',
+      descriptionen: '',
+      descriptionde: '',
+      projecturl: '',
+      githuburl: ''
   }
 @Input() itemIndex: number = 0;
 

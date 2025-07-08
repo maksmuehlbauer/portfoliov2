@@ -4,12 +4,13 @@ import { ContactForm } from '../../contact.interface';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { MailFeedbackComponent } from "./mail-feedback/mail-feedback.component";
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, MailFeedbackComponent],
+  imports: [CommonModule, FormsModule, MailFeedbackComponent, RouterModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

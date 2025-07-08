@@ -64,7 +64,7 @@
                         <label for="privacyCheckbox">
                             <img (click)="checkBoxState()" [src]="privacy.valid ? './assets/img/contact/checkbox-checked.png' : './assets/img/contact/checkbox-empty.png'" alt="checkbox">
                         </label>
-                        <span class="check-box-txt">I've read the <span class="privacy">privacy policy</span> and agree to the processing of my data as outlined.</span>
+                        <span class="check-box-txt">I've read the <span routerLink="privacy" class="privacy">privacy policy</span> and agree to the processing of my data as outlined.</span>
                     </div>
                     <button [disabled]="!contactForm.valid">Say hello ;)</button>
                 </form>

@@ -2,6 +2,15 @@
     <div class="flex-center">
         <div class="desk-max-width">
             <div class="main-content-box">
+                <img *ngFor="let image of styleElements"
+                    [src]="image.src"
+                    [ngStyle]="{
+                        'position': 'absolute',
+                        'top': image.top,
+                        'left': image.left,
+                        'z-index': image.zIndex
+                    }" 
+                    src="" alt="">
                 <img 
                 (click)="scrollToTop()" 
                 (mouseenter)="isHovered = true" (mouseleave)="isHovered = false"

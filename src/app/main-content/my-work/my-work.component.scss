@@ -3,6 +3,7 @@
 .main-content-box {
     width: 100%;
     margin: 111px 0;
+    position: relative;
 }
 
 .single-project {
@@ -15,5 +16,9 @@
 .odd-row {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.pos-rel {
+    position: relative;
 }
 

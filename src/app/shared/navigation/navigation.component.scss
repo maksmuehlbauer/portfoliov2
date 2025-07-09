@@ -3,7 +3,7 @@
 .main-content-box {
     width: 100%;
     max-width: 1440px;
-    background-color: aliceblue;
+    // background-color: aliceblue;
 }
 
 .header {
@@ -11,6 +11,7 @@
     position: absolute;
     width: 1440px;
     height: 117px;
+    z-index: 99;
     img {
         cursor: pointer;
     }

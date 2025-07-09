@@ -1,7 +1,31 @@
-<div class="flex-center">
+<div class="flex-center pos-rel">
+            <img *ngFor="let image of borderStyleElements" 
+            [src]="image.src" 
+            [ngStyle]="{
+                'position': 'absolute',
+                'top': image.top,
+                'left': image.left,
+                'right': image.right,
+                'z-index': image.zIndex,
+            }"
+            alt="bubble images">
     <div class="desk-max-width">
+
+
         <div class="main-content-box">
             <div>
+                <img *ngFor="let image of styleElements" 
+                    [src]="image.src" 
+                    [ngStyle]="{
+                        'position': 'absolute',
+                        'top': image.top,
+                        'left': image.left,
+                        'z-index': image.zIndex,
+                    }"
+                    alt="bubble images">
+                
+                
+                
                 <h2>My Work</h2>
                 <h3>Feel fre to try out my latest development projects and look into their code</h3>
                 @for(project of projectsData.projectList; track project.title; let i = $index) {

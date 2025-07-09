@@ -6,6 +6,7 @@
     @include display();
     padding: 0 96px;
     gap: 75px;
+    position: relative;
 }
 
 .title-box {
@@ -26,4 +27,10 @@
     >button {
         margin-top: 13px;
     }   
+}
+
+.bubble {
+    position: absolute;
+    top: 63px;
+    right: 324px;
 }

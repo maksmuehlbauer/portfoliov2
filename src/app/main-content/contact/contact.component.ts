@@ -16,8 +16,12 @@ import { RouterModule } from '@angular/router';
 })
 export class ContactComponent {
 
-  checkBoxAccepted: boolean = false;
+  styleElements = [
+    { src: './assets/img/my-projects/desk-bubble-2.png', top: '450px', left: '125px', zIndex: '0'},
+    { src: './assets/img/my-projects/desk-bubble-1.png', top: '700px', left: '1276px', zIndex: '0'}
+  ]
 
+  checkBoxAccepted: boolean = false;
   contactData: ContactForm =  {
     name: '',
     mail: '',

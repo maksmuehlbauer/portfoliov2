@@ -1,6 +1,6 @@
-* { margin: 0 }
+* { margin: 0; box-sizing: border-box; }
 // html, body { height: 100%; scroll-behavior: smooth;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; box-sizing: border-box;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif}
 html { scroll-behavior: smooth; }
 
 
@@ -8,6 +8,13 @@ $color-white: white;
 $main-color: #FF5959; // red
 $text-color: black;
 $color-disabled: #BBBBBB;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+
 
 @mixin display($flex: flex, $jc: center, $ai: center) {
   display: $flex;
@@ -75,6 +82,7 @@ p {
     width: 100%;
     max-width: 1440px;
     display: flex;
+    margin: 0 20px;
   }
 
 

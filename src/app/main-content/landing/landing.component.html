@@ -1,11 +1,10 @@
 <div class="background">
     <div class="flex-center">
-
         <div class="desk-max-width">
             <div class="main-content-box">
                 <img src="./assets/img/landing/bubble-3-big.png" class="mobile-bubble-top-left" alt="bubble">
                 <img src="./assets/img/landing/desktop-mid-bubble.png" class="bubble" alt="bubble">
-                <div class="img-box">
+                <div class="img-box" [class.change-zindex]="menuIsVisible">
                     <img src="./../../../assets/img/landing/portfolio-big.png" class="self-portrait" alt="person">
                 </div>
                 <div class="text-box">
@@ -18,7 +17,7 @@
                         <h3>Scroll</h3>
                         <div class="divider"></div>
                     </div>
-                    <div class="social-link-box">
+                    <div class="social-link-box" [class.change-zindex]="menuIsVisible">
                         <a href="https://github.com/maksmuehlbauer" target="_blank"><img src="./assets/img/landing/github.png" alt=""></a>
                         <a href="mailto: maximilian-muehlbauer@web.de" target="_blank"><img src="./assets/img/landing/desk-mail.png" alt=""></a>
                         <a href="https://www.linkedin.com/in/maximilian-m%C3%BChlbauer/" target="_blank"><img src="./assets/img/landing/linkin.png" alt=""></a>

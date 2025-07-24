@@ -9,15 +9,22 @@
             </div>
             <div class="burger-menu">
                 <img src="./assets/img/landing/burger-menu.png" 
-                alt="burger-menu" 
-                (click)="toggleMenu()">
+                alt="burger-menu"
+                (click)="portfolioService.toggleMenu()">
             </div>
             <div class="hidden-menu-box" [class.layer-switch]="menuIsVisible">
                 <div class="mobile-navigation" [class.menu-show]="menuIsVisible">
-                    <img routerLink="/" src="./assets/img/landing/logo-menu-red.png" alt="">
-                    <h3 routerLink="/" fragment="about-me">About me</h3>
-                    <h3 routerLink="/" fragment="skill-set">Skill set</h3>
-                    <h3 routerLink="/" fragment="my-work">My work</h3>
+                    <div class="logo-box">
+                        <img routerLink="/" src="./assets/img/landing/logo-menu-red.png" alt="logo" (click)="portfolioService.toggleMenu()">
+                        <img src="./assets/img/landing/close-48px.png" alt="close-btn" (click)="portfolioService.toggleMenu()">
+                    </div>
+                    <div class="link-box">
+                        <h3 routerLink="/" fragment="about-me">About me</h3>
+                        <h3 routerLink="/" fragment="skill-set">Skill set</h3>
+                        <h3 routerLink="/" fragment="my-work">My work</h3>
+                        <h3 routerLink="/" fragment="contact">Contact</h3>
+                    </div>
+                    
                 </div>
             </div>
 

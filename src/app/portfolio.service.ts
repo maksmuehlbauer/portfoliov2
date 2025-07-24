@@ -1,11 +1,27 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
 
+  private _menuIsVisible = new BehaviorSubject<boolean>(false);
+  menuIsVisible$: Observable<boolean> = this._menuIsVisible.asObservable()
+
   constructor() { }
+
+  toggleMenu() {
+    this._menuIsVisible.next(!this._menuIsVisible.value)
+  }
+
+  // openMenu() {
+  //   this._menuIsVisible.next(true);
+  // }
+
+  // closeMenu() {
+  //   this._menuIsVisible.next(false);
+  // }
 
     skillList = [
     { icon: 'ang.png', name: 'Angular' },

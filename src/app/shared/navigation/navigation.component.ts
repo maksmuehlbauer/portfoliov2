@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { PortfolioService } from '../../portfolio.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-navigation',
@@ -9,13 +11,30 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })
-export class NavigationComponent {
-  menuIsVisible: boolean = false
+export class NavigationComponent implements OnInit, OnDestroy {
 
-  toggleMenu() {
-    this.menuIsVisible = !this.menuIsVisible
-    console.log(this.menuIsVisible)
+  menuIsVisible: boolean = false;
+  private menuSubscription!: Subscription;
+
+
+  constructor(public portfolioService: PortfolioService) {  }
+
+  ngOnInit(){
+    this.menuSubscription = this.portfolioService.menuIsVisible$.subscribe(
+      isOpen => {this.menuIsVisible = isOpen}
+    )
   }
+
+  ngOnDestroy(){
+    if (this.menuSubscription) {
+      this.menuSubscription.unsubscribe();
+    }
+  }
+
+  // toggleMenu() {
+  //   this.menuIsVisible = !this.menuIsVisible
+  //   console.log(this.menuIsVisible)
+  // }
 
 
 }

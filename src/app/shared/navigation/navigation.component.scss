@@ -37,15 +37,19 @@
     bottom: 0;
     height: 100vh;
     z-index: -10;
-    &.layer-switch {
-        z-index: 20;
+    @media (max-width: $breakpoint-xxl) {
+        &.layer-switch {
+            z-index: 50;
+        }
     }
+
 }
 
 .mobile-navigation {
     display: none;
     @media (max-width: $breakpoint-xxl) {
-        display: block;
+        @include display();
+        flex-direction: column;
         position: absolute;
         top: 0;
         left: 0;
@@ -58,8 +62,25 @@
         &.menu-show {
             transform: translateX(0%);
         }
+        >.logo-box {
+           @include display($jc: space-between);
+            padding: 0 40px;
+            height: 117px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+           @media (max-width: $breakpoint-md) {
+            padding: 0 20px;
+           }
+        }
+        .link-box {
+            display: flex;
+            flex-direction: column;
+            gap: 30px
+        }
     }
 }
+
 
 .navigation {
     @include display();
@@ -83,7 +104,7 @@ h3 {
     &:hover {
         font-weight: 800;
     }
-//     @media (max-width: $breakpoint-xxl) {
-//         display: none;
-//   }
+    @media (max-width: $breakpoint-xxl) {
+        text-align: left;
+    }
 }

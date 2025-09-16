@@ -20,10 +20,28 @@
         cursor: pointer;
     }
     filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2)); 
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+        &:hover {
+            transform: scale(1.00) translateY(0);
+        }
+        img {
+            width: 100%;
+        }
+        
+    }
 }
 
 .text-box {
     width: 50%;
+    @media (max-width: $breakpoint-xxl) {
+        width: 100%;
+        @include display();
+        flex-direction: column;
+    }
+    @media (max-width: $breakpoint-md) {
+        text-align: center;
+    }
 }
 
 h3 {
@@ -38,10 +56,17 @@ h3 {
         background-color: $main-color;
         color: $color-white
     }
+    @media (max-width: $breakpoint-xxl) {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 p {
     width: 536px;
+    @media (max-width: $breakpoint-md) {
+        width: 100%;
+    }
 }
 
 .odd-text-box {
@@ -49,6 +74,12 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @media (max-width: $breakpoint-xxl) {
+        width: 100%;
+        @include display();
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 a {
@@ -70,5 +101,8 @@ a {
       color: $color-white;
       transform: scale(1.1);
       transform-origin: top left;
+    }
+    @media (max-width: $breakpoint-sm) {
+            font-size: 16px;
     }
 }

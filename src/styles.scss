@@ -56,6 +56,9 @@ h2 {
     font-weight: 900;
     letter-spacing: 1%;
     color: $main-color;
+    @media (max-width: $breakpoint-md) {
+      font-size: 64px;
+    }
 }
 
 h3 {

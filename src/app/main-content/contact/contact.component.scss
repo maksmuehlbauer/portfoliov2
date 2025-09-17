@@ -190,6 +190,9 @@ textarea {
     bottom: -24px;
     left: 16px;
     width: 100%;
+    @media (max-width: $breakpoint-sm) {
+            display: contents;
+        }
     >.error-txt {
         font-family: 'Montserrat', Helvetica, sans-serif;
         color: $main-color;

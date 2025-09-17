@@ -14,11 +14,12 @@
     width: 100%;
     height: 117px;
     z-index: 10;
-    padding: 0 40px;
     box-sizing: border-box;
-    // overflow: hidden;
     img {
         cursor: pointer;
+    }
+    @media (max-width: $breakpoint-xxl) {
+        padding: 0 40px;
     }
     @media (max-width: $breakpoint-md) {
         padding: 0 20px;
@@ -26,7 +27,6 @@
 }
 
 .hidden-menu-box {
-    // display: none;
     overflow: hidden;
     max-width: 100%;
     width: 100%;
@@ -58,7 +58,7 @@
         height: 100vh;
         background-color: aliceblue;
         transform: translateX(100%);
-        transition: transform 250ms ease-in-out;
+        transition: transform 1000ms ease-in-out;
         &.menu-show {
             transform: translateX(0%);
         }

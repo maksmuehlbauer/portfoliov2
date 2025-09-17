@@ -11,6 +11,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 291px;
+    @media (max-width: $breakpoint-md) {
+        height: 380px;
+    }
 }
 
 .main-content-box {
@@ -18,17 +21,28 @@
     height: 291px;
     @include display($jc: space-between);
     position: relative;
+    @media (max-width: $breakpoint-md) {
+        flex-direction: column;
+        justify-content: center;
+        height: 380px;
+        gap: 23px;
+    }
 }
 
-.name-box {
-    @include display();
-    flex-direction: column;
-    gap: 29px;
-    margin-top: 42px;
-    >h3 {
-        color: $color-white
+.show-desk {
+    @media (max-width: $breakpoint-md) {
+        display: none !important;
     }
-    >p {    
+}
+
+.show-mobile {
+    display: none;
+    @media (max-width: $breakpoint-md) {
+        display: inline-block !important;
+    }
+}
+
+p {    
         color: $color-white;
         position: relative;
         display: inline-block;
@@ -52,6 +66,19 @@
                 left: 15%;
             }
         }
+    }
+
+
+.name-box {
+    @include display();
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 42px;
+    >h3 {
+        color: $color-white
+    }
+    @media (max-width: $breakpoint-md) {
+        margin-top: 0;
     }
 }
 

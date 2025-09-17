@@ -31,10 +31,5 @@ export class NavigationComponent implements OnInit, OnDestroy {
     }
   }
 
-  // toggleMenu() {
-  //   this.menuIsVisible = !this.menuIsVisible
-  //   console.log(this.menuIsVisible)
-  // }
-
 
 }

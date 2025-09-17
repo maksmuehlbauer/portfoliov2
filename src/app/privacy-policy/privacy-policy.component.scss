@@ -4,6 +4,9 @@
     margin-top: 120px;
     width: 768px;
     position: relative;
+    @media (max-width: $breakpoint-lg) {
+        padding: 0 20px;
+    }
 }
 
 h1 {

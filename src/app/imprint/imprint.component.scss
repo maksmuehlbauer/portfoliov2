@@ -3,6 +3,15 @@
 .main-content-box {
     margin-top: 120px;
     position: relative;
+    @media (max-width: $breakpoint-xxl) {
+        padding: 0 20px;
+    }
+    @media (max-width: $breakpoint-md) {
+        padding: 0 0px;
+    }
+    @media (max-width: $breakpoint-sm) {
+        padding: 0 20px;
+    }
 }
 
 .imprint-title {
@@ -11,6 +20,9 @@
     font-weight: 900;
     letter-spacing: 1%;
     color: $main-color;
+    @media (max-width: $breakpoint-sm) {
+        font-size: 24px;
+    }
 }
 
 ul {

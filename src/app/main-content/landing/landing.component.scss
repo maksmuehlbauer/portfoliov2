@@ -93,6 +93,7 @@
     @include display($ai: flex-start);
     flex-direction: column;
     gap: 30px;
+    align-self: flex-end;
     .main-title-row-1 {
         font-family: 'Baloo 2', 'Poppins';
         font-size: 128px;

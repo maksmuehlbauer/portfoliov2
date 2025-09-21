@@ -3,20 +3,24 @@
 .main-content-box {
     width: 100%;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
     @include display($jc:space-between);
-    position: absolute;
+    position: fixed;
     max-width: 1440px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     height: 117px;
     z-index: 10;
     box-sizing: border-box;
+    transition: top 250ms ease-in-out ;
+    top: 0;
     img {
         cursor: pointer;
+    }
+    &.header-hidden {
+        top: -100px;
     }
     @media (max-width: $breakpoint-xxl) {
         padding: 0 40px;
@@ -26,41 +30,39 @@
     }
 }
 
-.hidden-menu-box {
-    overflow: hidden;
-    max-width: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
-    z-index: -10;
-    @media (max-width: $breakpoint-xxl) {
-        &.layer-switch {
-            z-index: 50;
-        }
-    }
-
-}
+// .hidden-menu-box {
+//     overflow: hidden;
+//     max-width: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     height: 100vh;
+//     z-index: -10;
+//     @media (max-width: $breakpoint-xxl) {
+//         &.layer-switch {
+//             z-index: 50;
+//         }
+//     }
+// }
 
 .mobile-navigation {
     display: none;
     @media (max-width: $breakpoint-xxl) {
         @include display();
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        right: -100%;
+        width: 100%;
         height: 100vh;
         background-color: aliceblue;
-        transform: translateX(100%);
-        transition: transform 1000ms ease-in-out;
+        z-index: 999;
+        transition: right 250ms ease-in-out;
         &.menu-show {
-            transform: translateX(0%);
+            right: 0;
         }
         >.logo-box {
            @include display($jc: space-between);

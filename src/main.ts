@@ -10,6 +10,8 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 import { provideHttpClient } from '@angular/common/http';
+import { provideAnimations } from '@angular/platform-browser/animations'; // <-- Wichtiger Import
+
 
 
 const extendedAppConfig = {
@@ -17,8 +19,11 @@ const extendedAppConfig = {
   providers: [
     appConfig.providers,
     provideHttpClient(),
+    provideAnimations()
   ]
 };
 
 bootstrapApplication(AppComponent, extendedAppConfig)
   .catch(err => console.error(err));
+
+

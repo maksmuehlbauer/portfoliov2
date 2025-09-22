@@ -3,14 +3,17 @@
         <div class="main-content-box">
             <img src="./assets/img/self-presentation/bubble-6-small.png" class="bubble" alt="bubble">
             <div class="title-box">
-                <h2>Let's work togehter</h2>
+                <h2>{{ 'DESCRIPTION.TITLE' | translate }}</h2>
             </div>
             <div class="text-box">
-                <h3>I am a Front-end developer based in Munich, Germany. I enjoy helping designers and companies bring their ideas into real life.  
-                I am looking forward to continuing my developer career with a job in a junior web developer position.</h3>
+                <h3>{{ 'DESCRIPTION.STARTTEXT' | translate }}</h3>
                 <br>
-                <h3>If you think I’d be a good match for your projects, contact me!</h3>
-                <button routerLink="/" fragment="contact">Send a message</button>
+                <h3>{{ 'DESCRIPTION.ENDTEXT' | translate }}</h3>
+                <button 
+                    routerLink="/" 
+                    fragment="contact">
+                    {{ 'DESCRIPTION.BUTTON' | translate }}
+                </button>
             </div>
         </div>
     </div>

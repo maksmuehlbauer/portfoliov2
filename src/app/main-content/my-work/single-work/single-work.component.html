@@ -5,7 +5,7 @@
 <div class="text-box" [ngClass]="textBoxAlign(itemIndex)">
     <span class="project-title">{{ projectData.title }}</span>
     <h3>{{ projectData.languages }}</h3>
-    <p>{{ projectData.descriptionen }}</p>
+    <p>{{ 'SINGLEWORK.PROJECTDESCRIPTION' | translate: { description: getProjectDescription(projectData) } }}</p>
     <div class="button-box">
         <a href="{{ projectData.projecturl }}" target="_blank" class="bg-color">Live test</a>
         <a href="{{ projectData.githuburl }}" target="_blank">Github</a>

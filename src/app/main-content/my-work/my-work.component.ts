@@ -2,17 +2,20 @@ import { Component, inject } from '@angular/core';
 import { SingleWorkComponent } from "./single-work/single-work.component";
 import { PortfolioService } from '../../portfolio.service';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-work',
   standalone: true,
-  imports: [SingleWorkComponent, CommonModule],
+  imports: [SingleWorkComponent, CommonModule, TranslateModule],
   templateUrl: './my-work.component.html',
   styleUrl: './my-work.component.scss'
 })
 export class MyWorkComponent {
 
   projectsData = inject(PortfolioService)
+  
+  constructor(private translate: TranslateService) {  }
 
   styleElements = [
     { src: './assets/img/my-projects/desk-bubble-1.png', top: '-30px', left: '563px', zIndex: '0'},
@@ -30,6 +33,12 @@ export class MyWorkComponent {
 
   getDirection(i:number):string {
     return i % 2 === 0 ? '' : 'odd-row'
+  }
+
+  toggleLanguage(): void {
+    const currentLang = this.translate.getCurrentLang();
+    const newLang = currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(newLang);
   }
 }
 

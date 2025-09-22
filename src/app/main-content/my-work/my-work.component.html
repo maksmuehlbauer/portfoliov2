@@ -26,8 +26,8 @@
                 
                 
                 
-                <h2>My Work</h2>
-                <h3>Feel fre to try out my latest development projects and look into their code</h3>
+                <h2>{{ 'WORK.TITLE' | translate }}</h2>
+                <h3>{{ 'WORK.STARTTEXT' | translate }}</h3>
                 @for(project of projectsData.projectList; track project.title; let i = $index) {
                     <app-single-work 
                     [projectData]="project" 

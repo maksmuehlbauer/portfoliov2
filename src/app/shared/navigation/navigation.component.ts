@@ -3,11 +3,12 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { PortfolioService } from '../../portfolio.service';
 import { Subscription } from 'rxjs';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, TranslateModule],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })
@@ -18,12 +19,17 @@ export class NavigationComponent implements OnInit, OnDestroy {
   private menuSubscription!: Subscription;
 
 
-  constructor(public portfolioService: PortfolioService) {  }
+  constructor(
+    public portfolioService: PortfolioService,
+    private translate: TranslateService
+  ) 
+  {  }
 
   ngOnInit(){
     this.menuSubscription = this.portfolioService.menuIsVisible$.subscribe(
-      isOpen => {this.menuIsVisible = isOpen}
-    )
+      isOpen => {this.menuIsVisible = isOpen}),
+    this.translate.addLangs(['de', 'en']);
+    this.translate.use('en');
   }
 
   ngOnDestroy(){
@@ -39,6 +45,12 @@ export class NavigationComponent implements OnInit, OnDestroy {
     } else {
       this.isHeaderHidden = false; // Zeige den Header an, wenn ganz oben gescrollt wird
     }
+  }
+
+  toggleLanguage(): void {
+    const currentLang = this.translate.currentLang;
+    const newLang = currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(newLang);
   }
 
 

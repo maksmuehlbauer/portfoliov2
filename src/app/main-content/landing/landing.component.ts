@@ -1,34 +1,46 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PortfolioService } from '../../portfolio.service';
 import { Subscription } from 'rxjs';
+
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
-export class LandingComponent {
+export class LandingComponent implements OnInit {
 
   menuIsVisible: boolean = false;
   private menuSubscription!: Subscription;
 
 
-  constructor(public portfolioService: PortfolioService) {  }
+  constructor(
+    public portfolioService: PortfolioService,
+    private translate: TranslateService
+  ) {  }
 
-  ngOnInit(){
+  ngOnInit(): void{
     this.menuSubscription = this.portfolioService.menuIsVisible$.subscribe(
-      isOpen => {this.menuIsVisible = isOpen}
-    )
+      isOpen => {this.menuIsVisible = isOpen}),
+    this.translate.addLangs(['de', 'en']);
+    this.translate.use('en');
   }
 
   ngOnDestroy(){
     if (this.menuSubscription) {
       this.menuSubscription.unsubscribe();
     }
+  }
+
+  toggleLanguage(): void {
+    const currentLang = this.translate.currentLang;
+    const newLang = currentLang === 'de' ? 'en' : 'de';
+    this.translate.use(newLang);
   }
 
 }

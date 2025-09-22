@@ -9,7 +9,7 @@
                 </div>
                 <div class="text-box">
                     <div class="main-title-box">
-                        <h1>Hello! I am Max</h1>
+                        <h1>{{ 'AOT.NAME' | translate}}</h1>
                         <span class="main-title-row-1">Frontend</span>
                         <span class="main-title-row-2">Developer</span>
                     </div>
@@ -27,3 +27,4 @@
         </div>
     </div>
 </div>
+<button (click)="toggleLanguage()" class="switch-lang">change</button>

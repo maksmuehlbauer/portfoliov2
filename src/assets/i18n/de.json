@@ -1,0 +1,65 @@
+{
+    "AOT": {
+        "NAME": "Hallo! Ich bin Max"
+    },
+    "HEADER": {
+        "ABOUT": "Über mich",
+        "SKILL": "Fähigkeiten",
+        "WORKS": "Meine Arbeit",
+        "CONTACT": "Kontakt"
+    },
+    "DESCRIPTION": {
+        "TITLE": "Lass uns zusammen arbeiten",
+        "STARTTEXT": "Ich bin ein Frontend-Developer mit Sitz in Unna, Deutschland. Es macht mir Spaß, Designern und Unternehmen dabei zu helfen, ihre Ideen in die Tat umzusetzen. Ich freue mich darauf, meine Entwicklerkarriere mit einem Job als Junior-Webentwickler fortzusetzen.",
+        "ENDTEXT": "Wenn Sie denken, dass ich gut zu Ihren Projekten passe, kontaktieren Sie mich!",
+        "BUTTON": "Nachricht senden"
+    },
+    "SKILLS": {
+        "TITLE": "Fähigkeiten"
+    },
+    "WORK": {
+        "TITLE": "Meine Projekte",
+        "STARTTEXT": "Probieren Sie gerne meine neuesten Projekte aus und werfen Sie einen Blick in den Code."
+    },
+    "SINGLEWORK": {
+        "PROJECTDESCRIPTION": "{{ description }}"
+    },
+    "CONTACT": {
+        "TITLE": "Kontakt",
+        "SECONDTITLE": "Gibt es ein Problem zu lösen?",
+        "TEXT": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",        
+        "QUESTION": "Brauchen Sie einen Frontend-Entwickler?",
+        "ME": "Kontaktieren Sie mich!",
+        "YOURNAME": "Ihr Name",
+        "YOURMAIL": "Ihre E-Mail",
+        "YOURMSG": "Ihre Nachricht",
+        "NAMEERR": "Bitte geben Sie einen Namen mit mindestens 2 Zeichen ein",
+        "MAILERR": "Bitte geben Sie eine gültige E-Mail ein, Beispiel: mail&#64;mailer.com",
+        "MAILERRSEC": "E-Mail-Adresse ist erforderlich",
+        "MSGERR": "Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein",
+        "MSGERRSEC": "Kurze Nachricht ist erforderlich",
+        "POLICYONE": "Ich habe die ",
+        "POLICYSEC": "Datenschutzrichtlinie",
+        "POLICYTHIRD": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "BUTTON": "Sag Hallo ;-)"
+        
+    },
+    "FOOTER": {
+        "IMPRINT": "Impressum"
+    },
+    "IMPRINT": {
+        "CONTENT": "Impressum",
+        "ACCORDING": "Gemäß § 5 TMG",
+        "CONTACT": "Kontakt",
+        "DISCLAIMER": "Haftungsausschluss",
+        "DISC_TEXT": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen."
+    },
+    "PRIVACY": {
+        "CONTENT": "<h1>Datenschutzrichtlinie</h1>\n<p>Zuletzt aktualisiert: 07. Juli 2024</p>\n<p>Diese Datenschutzrichtlinie beschreibt unsere Richtlinien und Verfahren zur Erfassung, Verwendung und Offenlegung Ihrer Daten bei der Nutzung des Dienstes und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt.</p>\n<p>Wir verwenden Ihre personenbezogenen Daten, um den Dienst bereitzustellen und zu verbessern. Durch die Nutzung des Dienstes stimmen Sie der Erfassung und Verwendung von Informationen gemäß dieser Datenschutzrichtlinie zu. Diese Datenschutzrichtlinie wurde mit Hilfe des <a href=\"https://www.freeprivacypolicy.com/free-privacy-policy-generator/\" target=\"_blank\">kostenlosen Datenschutzrichtlinien-Generators</a> erstellt.</p>\n<h2>Auslegung und Definitionen</h2>\n<h3>Auslegung</h3>\n<p>Die Wörter, deren Anfangsbuchstabe groß geschrieben ist, haben unter den folgenden Bedingungen definierte Bedeutungen. Die folgenden Definitionen haben dieselbe Bedeutung, unabhängig davon, ob sie im Singular oder im Plural erscheinen.</p>\n<h3>Definitionen</h3>\n<p>Für die Zwecke dieser Datenschutzrichtlinie:</p>\n<ul>\n<li>\n<p><strong>Konto</strong> bedeutet ein einzigartiges Konto, das für Sie erstellt wird, um auf unseren Service oder Teile unseres Service zuzugreifen.</p>\n</li>\n<li>\n<p><strong>Tochtergesellschaft</strong> bedeutet eine Einheit, die eine Partei kontrolliert, von einer Partei kontrolliert wird oder unter gemeinsamer Kontrolle mit einer Partei steht, wobei \"Kontrolle\" den Besitz von 50 % oder mehr der Aktien, Beteiligungen oder anderen Wertpapiere bedeutet, die zur Wahl von Direktoren oder anderen Leitungsorganen berechtigt sind.</p>\n</li>\n<li>\n<p><strong>Unternehmen</strong> (in dieser Vereinbarung entweder als \"das Unternehmen\", \"Wir\", \"Uns\" oder \"Unser\" bezeichnet) bezieht sich auf Portfolio.</p>\n</li>\n<li>\n<p><strong>Cookies</strong> sind kleine Dateien, die von einer Website auf Ihrem Computer, Mobilgerät oder einem anderen Gerät abgelegt werden und unter anderem Details Ihres Browserverlaufs auf dieser Website enthalten.</p>\n</li>\n<li>\n<p><strong>Land</strong> bezieht sich auf: Nordrhein-Westfalen, Deutschland</p>\n</li>\n<li>\n<p><strong>Gerät</strong> bezeichnet jedes Gerät, das auf den Dienst zugreifen kann, wie z. B. ein Computer, ein Mobiltelefon oder ein digitales Tablet.</p>\n</li>\n<li>\n<p><strong>Personenbezogene Daten</strong> sind alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen.</p>\n</li>\n<li>\n<p><strong>Dienst</strong> bezieht sich auf die Website.</p>\n</li>\n<li>\n<p><strong>Dienstanbieter</strong> bezeichnet jede natürliche oder juristische Person, die die Daten im Auftrag des Unternehmen. Es bezieht sich auf Drittunternehmen oder Einzelpersonen, die vom Unternehmen beschäftigt werden, um den Service zu ermöglichen, den Service im Namen des Unternehmens bereitzustellen, mit dem Service verbundene Dienstleistungen zu erbringen oder das Unternehmen bei der Analyse der Nutzung des Service zu unterstützen.</p>\n</li>\n<li>\n<p><strong>Nutzungsdaten</strong> beziehen sich auf automatisch erfasste Daten, die entweder durch die Nutzung des Service oder durch die Service-Infrastruktur selbst generiert werden (beispielsweise die Dauer eines Seitenbesuchs).</p>\n</li>\n<li>\n<p><strong>Website</strong> bezieht sich auf Portfolio, zugänglich über <a href=\"https://maximilian-muehlbauer.de/\" rel=\"external nofollow noopener\" target=\"_blank\">https://maximilian-muehlbauer.de/</a></p>\n</li>\n<li>\n<p><strong>Sie</strong> bezeichnet die Person, die auf den Service zugreift oder ihn nutzt, oder das Unternehmen oder eine andere juristische Person, in deren Namen diese Person auf den Dienst zugreift oder ihn nutzt, je nachdem, was zutrifft.</p>\n</li>\n</ul>\n<h2>Erfassung und Nutzung Ihrer personenbezogenen Daten</h2>\n<h3>Arten der erfassten Daten</h3>\n<h4>Personenbezogene Daten</h4>\n<p>Bei der Nutzung unseres Dienstes bitten wir Sie unter Umständen um die Bereitstellung bestimmter personenbezogener Daten, die dazu verwendet werden können, Sie zu kontaktieren oder zu identifizieren. Personenbezogene Daten können Folgendes umfassen, sind aber nicht darauf beschränkt:</p>\n<ul>\n<li>\n<p>E-Mail-Adresse</p>\n</li>\n<li>\n<p>Vor- und Nachname</p>\n</li>\n<li>\n<p>Nutzungsdaten</p>\n</li>\n</ul>\n<h4>Nutzungsdaten</h4>\n<p>Nutzungsdaten werden bei Verwendung des Dienstes automatisch erfasst.</p>\n<p>Nutzungsdaten können Informationen wie die Internetprotokolladresse (z. B. IP-Adresse) Ihres Geräts, Browsertyp, Browserversion, die von Ihnen besuchten Seiten unseres Dienstes, Uhrzeit und Datum Ihres Besuchs, die auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten umfassen.</p>\n<p>Wenn Sie über ein Mobilgerät auf den Dienst zugreifen, erfassen wir möglicherweise automatisch bestimmte Informationen, einschließlich, aber nicht beschränkt auf den Typ des von Ihnen verwendeten Mobilgeräts, die eindeutige ID Ihres Mobilgeräts, die IP-Adresse Ihr Mobilgerät, Ihr mobiles Betriebssystem, die Art des von Ihnen verwendeten mobilen Internetbrowsers, eindeutige Gerätekennungen und andere Diagnosedaten.</p>\n<p>Wir können auch Informationen sammeln, die Ihr Browser sendet, wenn Sie unseren Dienst besuchen oder wenn Sie über ein Mobilgerät auf den Dienst zugreifen.</p>\n<h4>Tracking-Technologien und Cookies</h4>\n<p>Wir verwenden Cookies und ähnliche Tracking-Technologien, um die Aktivität auf unserem Dienst zu verfolgen und bestimmte Informationen zu speichern. Die verwendeten Tracking-Technologien sind Beacons, Tags und Skripte zum Sammeln und Verfolgen von Informationen und um unseren Service zu verbessern und zu analysieren. Zu den von uns verwendeten Technologien können gehören:</p>\n<ul>\n<li><strong>Cookies oder Browser-Cookies.</strong> Ein Cookie ist eine kleine Datei, die auf Ihrem Gerät abgelegt wird. Sie können Ihren Browser anweisen, alle Cookies abzulehnen oder anzugeben, wann ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Service nicht nutzen. Sofern Sie Ihre Browsereinstellungen nicht so angepasst haben, dass Cookies abgelehnt werden, kann unser Service Cookies verwenden.</li>\n<li><strong>Web Beacons.</strong> Bestimmte Abschnitte unseres Service und unserer E-Mails können kleine elektronische Dateien enthalten, die als Web Beacons (auch als Clear Gifs, Pixel Tags und Single-Pixel Gifs bezeichnet) bezeichnet werden und es dem Unternehmen beispielsweise ermöglichen, die Anzahl der Benutzer zu zählen, die diese Seiten besucht oder eine E-Mail geöffnet haben, und andere damit verbundene Website-Statistiken zu erstellen (beispielsweise die Beliebtheit eines bestimmten Abschnitts aufzuzeichnen und die System- und Serverintegrität zu überprüfen).</li>\n</ul>\n<p>Cookies können \"dauerhafte\" oder \"Sitzungs-Cookies\" sein. Dauerhafte Cookies verbleiben auf Ihrem PC oder Mobilgerät, wenn Sie offline gehen, während Sitzungs-Cookies gelöscht werden, sobald Sie Ihren Webbrowser schließen. Weitere Informationen zu Cookies finden Sie im Artikel der <a href=\"https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking\" target=\"_blank\">Website zur kostenlosen Datenschutzrichtlinie</a>.</p>\n<p>Wir verwenden sowohl Sitzungs- als auch dauerhafte Cookies für die unten aufgeführten Zwecke:</p>\n<ul>\n<li>\n<p><strong>Notwendige/essenzielle Cookies</strong></p>\n<p>Typ: Sitzungscookies</p>\n<p>Verwaltet von: Uns</p>\n<p>Zweck: Diese Cookies sind unerlässlich, um Ihnen die über die Website verfügbaren Dienste bereitzustellen und Ihnen die Verwendung einiger ihrer Funktionen zu ermöglichen. Sie helfen bei der Authentifizierung von Benutzern und verhindern die betrügerische Verwendung von Benutzerkonten. Ohne diese Cookies können die von Ihnen angeforderten Dienste nicht bereitgestellt werden. Wir verwenden diese Cookies nur, um Ihnen diese Dienste bereitzustellen.</p>\n</li>\n<li>\n<p><strong>Cookies-Richtlinie/Cookies zur Annahme von Hinweisen</strong></p>\n<p>Typ: Dauerhafte Cookies</p>\n<p>Verwaltet von: Uns</p>\n<p>Zweck: Diese Cookies identifizieren, ob Benutzer die Verwendung von Cookies auf der Website akzeptiert haben.</p>\n</li>\n<li>\n<p><strong>Funktionalitäts-Cookies</strong></p>\n<p>Typ: Dauerhafte Cookies</p>\n<p>Verwaltet von: Uns</p>\n<p>Zweck: Diese Cookies ermöglichen es uns, die von Ihnen bei der Verwendung der Website getroffenen Entscheidungen zu speichern, z. B. Ihre Anmeldedaten oder Spracheinstellungen. Der Zweck dieser Cookies besteht darin, Ihnen ein persönlicheres Erlebnis zu bieten und zu vermeiden, dass Sie Ihre Präferenzen bei jeder Nutzung der Website erneut eingeben müssen.</p>\n</li>\n</ul>\n<p>Weitere Informationen zu den von uns verwendeten Cookies und Ihren Auswahlmöglichkeiten in Bezug auf Cookies finden Sie in unserer Cookie-Richtlinie oder im Abschnitt „Cookies“ unserer Datenschutzrichtlinie.</p>\n<h3>Verwendung Ihrer personenbezogenen Daten</h3>\n<p>Das Unternehmen kann personenbezogene Daten für die folgenden Zwecke verwenden:</p>\n<ul>\n<li>\n<p><strong>Zur Bereitstellung und Aufrechterhaltung unseres Dienstes</strong>, einschließlich der Überwachung der Nutzung unseres Dienstes.</p>\n</li>\n<li>\n<p><strong>Zur Verwaltung Ihres Kontos:</strong> zur Verwaltung Ihrer Registrierung als Benutzer des Dienstes. Die von Ihnen bereitgestellten personenbezogenen Daten können Ihnen Zugriff auf verschiedene Funktionen des Dienstes gewähren, die Ihnen als registrierter Benutzer zur Verfügung stehen.</p>\n</li>\n<li>\n<p><strong>Zur Erfüllung eines Vertrags:</strong> die Entwicklung, Einhaltung und Durchführung des Kaufvertrags für die von Ihnen erworbenen Produkte, Artikel oder Dienstleistungen oder eines anderen Vertrags mit uns über den Dienst.</p>"
+    },
+    "MAILSUCCES": {
+        "TEXT": "Nachricht erfolgreich versendet"
+    }
+}
+    
+

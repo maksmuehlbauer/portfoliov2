@@ -14,12 +14,13 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';
+  currentLanguage: string = 'en';
 
   constructor( private translate: TranslateService ) {  }
 
   ngOnInit(): void{
     this.translate.addLangs(['de', 'en']);
-    this.translate.use('de');
+    this.translate.use('en');
   }
 
   toggleLanguage(): void {

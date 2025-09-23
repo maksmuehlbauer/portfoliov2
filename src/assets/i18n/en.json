@@ -59,6 +59,9 @@
     },
     "MAILSUCCES": {
         "TEXT": "Mail sent successfully"
+    },
+    "LANGBTN": {
+        "LANG": "en"
     }
 
       

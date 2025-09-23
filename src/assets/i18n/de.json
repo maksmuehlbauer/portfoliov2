@@ -60,6 +60,9 @@
     },
     "MAILSUCCES": {
         "TEXT": "Nachricht erfolgreich versendet"
+    },
+    "LANGBTN": {
+        "LANG": "de"
     }
 }
     

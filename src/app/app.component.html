@@ -1,8 +1,12 @@
 <div class="page-container">
         <div class="content-wrap">
+            <div class="desk-max-width">
+            <div class="lang-container-desktop">
+                <div (click)="toggleLanguage()" class="btn-lang">{{ 'LANGBTN.LANG' | translate}}</div>
+            </div>
+            </div>
             <app-navigation></app-navigation>
             <router-outlet />
         </div>
     <app-footer></app-footer>
 </div>
-<button (click)="toggleLanguage()" class="switch-lang">change</button>

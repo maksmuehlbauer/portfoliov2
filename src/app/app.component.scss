@@ -12,9 +12,52 @@
     }
 }
 
-.switch-lang {
-    position: fixed;
-    top: 100px;
-    right: 100px;
-    z-index: 999999;
+
+.lang-container {
+    @include display();
+    // background-color: aqua;
+    width: 100%;
+    gap: 16px;
+    >.btn-lang {
+        margin-top: 24px;
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 16px;
+        color: $main-color;
+        border: none;
+        background-color: rgba(0,0,0,0);
+    }
+    >.pipe {
+        border-right: 1px solid black !important;
+        height: 32px;
+        margin-top: 24px;
+    }
+}
+
+
+.lang-container-desktop {
+    background-color: rgba($main-color, 0.5);
+    padding: 12px;
+    position: absolute;
+    right: 12px;
+    top: -24px;
+    border-radius: 999px;
+    z-index: 10;
+    transition: all 250ms ease-in-out;
+    display: block;
+    &:hover {
+        transform: scale(1.2);
+    }
+    >.btn-lang {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding: 16px;
+        color: $color-white;
+        border: none;
+        border-radius: 999px;
+        background-color: rgba($main-color, 0.8);
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

@@ -27,9 +27,7 @@ export class NavigationComponent implements OnInit, OnDestroy {
 
   ngOnInit(){
     this.menuSubscription = this.portfolioService.menuIsVisible$.subscribe(
-      isOpen => {this.menuIsVisible = isOpen}),
-    this.translate.addLangs(['de', 'en']);
-    this.translate.use('en');
+      isOpen => {this.menuIsVisible = isOpen})
   }
 
   ngOnDestroy(){

@@ -38,7 +38,7 @@
         "MAILERR": "Bitte geben Sie eine gültige E-Mail ein, Beispiel: mail&#64;mailer.com",
         "MAILERRSEC": "E-Mail-Adresse ist erforderlich",
         "MSGERR": "Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein",
-        "MSGERRSEC": "Kurze Nachricht ist erforderlich",
+        "MSGERRSEC": "Eine kurze Nachricht ist erforderlich",
         "POLICYONE": "Ich habe die ",
         "POLICYSEC": "Datenschutzrichtlinie",
         "POLICYTHIRD": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",

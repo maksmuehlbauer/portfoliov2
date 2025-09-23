@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void{
     this.translate.addLangs(['de', 'en']);
-    this.translate.use('en');
+    this.translate.use('de');
   }
 
   toggleLanguage(): void {

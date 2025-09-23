@@ -6,6 +6,7 @@
     margin: 0 auto;
 }
 
+
 .header {
     @include display($jc:space-between);
     position: fixed;
@@ -30,23 +31,6 @@
     }
 }
 
-// .hidden-menu-box {
-//     overflow: hidden;
-//     max-width: 100%;
-//     width: 100%;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     height: 100vh;
-//     z-index: -10;
-//     @media (max-width: $breakpoint-xxl) {
-//         &.layer-switch {
-//             z-index: 50;
-//         }
-//     }
-// }
 
 .mobile-navigation {
     display: none;
@@ -92,6 +76,7 @@
     }
 }
 
+
 .burger-menu {
     display: none;
     @media (max-width: $breakpoint-xxl) {
@@ -99,8 +84,9 @@
     }
 }
 
+
 h3 {
-    width: 140px;
+    width: 150px;
     cursor: pointer;
     text-align: right;
     &:hover {

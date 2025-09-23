@@ -11,3 +11,10 @@
         padding-bottom: 380px;
     }
 }
+
+.switch-lang {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 999999;
+}

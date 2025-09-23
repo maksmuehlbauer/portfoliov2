@@ -33,6 +33,7 @@
         "YOURNAME": "Ihr Name",
         "YOURMAIL": "Ihre E-Mail",
         "YOURMSG": "Ihre Nachricht",
+        "NAMEERRONE": "Ein Name ist erforderlich",
         "NAMEERR": "Bitte geben Sie einen Namen mit mindestens 2 Zeichen ein",
         "MAILERR": "Bitte geben Sie eine gültige E-Mail ein, Beispiel: mail&#64;mailer.com",
         "MAILERRSEC": "E-Mail-Adresse ist erforderlich",

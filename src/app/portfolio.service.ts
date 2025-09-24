@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  private _menuIsVisible = new BehaviorSubject<boolean>(false);
+  private _menuIsVisible = new BehaviorSubject<boolean>(true);
   menuIsVisible$: Observable<boolean> = this._menuIsVisible.asObservable()
 
   constructor() { }

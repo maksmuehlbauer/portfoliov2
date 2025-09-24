@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PortfolioService } from '../../portfolio.service';
-import { Subscription } from 'rxjs';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 
@@ -12,28 +10,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
-export class LandingComponent implements OnInit {
-
-  menuIsVisible: boolean = false;
-  private menuSubscription!: Subscription;
+export class LandingComponent {
 
 
-  constructor(
-    public portfolioService: PortfolioService,
-    private translate: TranslateService
-  ) 
-  {  }
+  constructor( private translate: TranslateService ) {  }
 
-  ngOnInit(): void{
-    this.menuSubscription = this.portfolioService.menuIsVisible$.subscribe(
-      isOpen => {this.menuIsVisible = isOpen})
-  }
-
-  ngOnDestroy(){
-    if (this.menuSubscription) {
-      this.menuSubscription.unsubscribe();
-    }
-  }
 
   toggleLanguage(): void {
     const currentLang = this.translate.getCurrentLang();

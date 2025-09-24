@@ -13,26 +13,20 @@
 }
 
 
-.lang-container {
-    @include display();
-    // background-color: aqua;
-    width: 100%;
-    gap: 16px;
-    >.btn-lang {
-        margin-top: 24px;
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        font-size: 16px;
-        padding: 16px;
-        color: $main-color;
-        border: none;
-        background-color: rgba(0,0,0,0);
-    }
-    >.pipe {
-        border-right: 1px solid black !important;
-        height: 32px;
-        margin-top: 24px;
-    }
-}
+// .lang-container {
+//     @include display();
+//     width: 100%;
+//     gap: 16px;
+//     >.btn-lang {
+//         margin-top: 24px;
+//         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+//         font-size: 16px;
+//         padding: 16px;
+//         color: $main-color;
+//         border: none;
+//         background-color: rgba(0,0,0,0);
+//     }
+// }
 
 
 .lang-container-desktop {
@@ -42,7 +36,7 @@
     right: 12px;
     top: -24px;
     border-radius: 999px;
-    z-index: 10;
+    z-index: 9999;
     transition: all 250ms ease-in-out;
     display: block;
     &:hover {
@@ -60,4 +54,19 @@
             cursor: pointer;
         }
     }
+    @media (max-width: $breakpoint-xxl) {
+        right: 90px;
+        top: 17px; //17px default
+
+    }
+
+    // Fade in out animation
+
 }
+
+
+
+
+
+
+

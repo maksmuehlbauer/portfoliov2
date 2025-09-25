@@ -21,6 +21,10 @@ $breakpoint-xxl: 1440px;
   align-items: $ai;
 }
 
+.no-scroll {
+  overflow: hidden !important;
+}
+
 button {
     font-family: 'Poppins', 'Baloo 2';
     font-size: 23px;
@@ -84,7 +88,7 @@ p {
     width: 100%;
     max-width: 1440px;
     display: flex;
-    margin: 0 20px;
+    // margin: 0 20px;
   }
 
 

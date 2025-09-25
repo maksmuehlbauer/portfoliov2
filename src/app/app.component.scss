@@ -13,22 +13,6 @@
 }
 
 
-// .lang-container {
-//     @include display();
-//     width: 100%;
-//     gap: 16px;
-//     >.btn-lang {
-//         margin-top: 24px;
-//         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-//         font-size: 16px;
-//         padding: 16px;
-//         color: $main-color;
-//         border: none;
-//         background-color: rgba(0,0,0,0);
-//     }
-// }
-
-
 .lang-container-desktop {
     background-color: rgba($main-color, 0.5);
     padding: 12px;
@@ -54,13 +38,23 @@
             cursor: pointer;
         }
     }
+}
+
+.mobile-extension {
     @media (max-width: $breakpoint-xxl) {
+        top: -80px;
         right: 90px;
-        top: 17px; //17px default
-
+        &.trans-right {
+            top: 17px;
+        }
     }
-
-    // Fade in out animation
+    @media (max-width: $breakpoint-md) {
+        top: -80px;
+        right: 70px;
+        &.trans-right {
+            top: 17px;
+        }
+    }
 
 }
 

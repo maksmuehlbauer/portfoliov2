@@ -6,24 +6,29 @@ import { BehaviorSubject, Observable } from 'rxjs';
 })
 export class PortfolioService {
 
-  private _menuIsVisible = new BehaviorSubject<boolean>(true);
+  private _menuIsVisible = new BehaviorSubject<boolean>(false);
   menuIsVisible$: Observable<boolean> = this._menuIsVisible.asObservable()
+
+  scrollEnabled: boolean = true
 
   constructor() { }
 
-  toggleMenu() {
-    this._menuIsVisible.next(!this._menuIsVisible.value)
+  toggleScrolling() {
+    if (this.scrollEnabled) {
+      document.body.style.overflow = 'hidden';
+      this.scrollEnabled = false;
+    } else {
+      document.body.style.overflow = 'auto';
+      this.scrollEnabled = true;
+    }
   }
 
-  // openMenu() {
-  //   this._menuIsVisible.next(true);
-  // }
+  toggleMenu() {
+    this._menuIsVisible.next(!this._menuIsVisible.value)
+    this.toggleScrolling();
+  }
 
-  // closeMenu() {
-  //   this._menuIsVisible.next(false);
-  // }
-
-    skillList = [
+  skillList = [
     { icon: 'ang.png', name: 'Angular' },
     { icon: 'typescript.png', name: 'TypeScript' },
     { icon: 'js.png', name: 'JavaScript' },

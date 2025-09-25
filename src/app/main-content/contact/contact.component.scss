@@ -10,7 +10,6 @@
     @media (max-width: $breakpoint-xl) {
         justify-content: center;
     }
-
 }
 
 .main-content-box {
@@ -18,6 +17,9 @@
     height: 860px;
     @include display();
     position: relative;
+    @media (max-width: $breakpoint-xxl) {
+        padding: 0 40px;
+    }
     @media (max-width: $breakpoint-xl) {
         flex-direction: column;
         width: 620px;
@@ -25,7 +27,7 @@
     }
     @media (max-width: $breakpoint-md) {
         width: 100%;
-        padding: 0 16px;
+        padding: 0 20px;
     }
 }
 
@@ -191,8 +193,8 @@ textarea {
     left: 16px;
     width: 100%;
     @media (max-width: $breakpoint-sm) {
-            display: contents;
-        }
+        display: contents;
+    }
     >.error-txt {
         font-family: 'Montserrat', Helvetica, sans-serif;
         color: $main-color;
@@ -206,6 +208,12 @@ textarea {
     &:hover {
         cursor: pointer;
     }
+    @media (max-width: $breakpoint-xxl) {
+        left: 40px;
+    }
+    @media (max-width: $breakpoint-md) {
+        left: 20px;
+    }
 }
 
 .check-box-txt {
@@ -216,7 +224,6 @@ textarea {
 .privacy {
     color: $main-color;
     display: inline-block;
-    // width: 100px;
     &:hover {
         font-weight: 500;
         text-decoration: underline;

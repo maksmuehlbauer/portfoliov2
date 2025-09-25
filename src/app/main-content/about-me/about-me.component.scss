@@ -8,17 +8,12 @@
     gap: 75px;
     position: relative;
     @media (max-width: $breakpoint-xxl) {
-        padding: 0 32px;
+        padding: 0 40px;
     }
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-md) {
         flex-direction: column;
-        padding: 145px 32px 64px 32px;
-    }
-    @media (max-width: $breakpoint-lg) {
-        flex-direction: column;
-        padding: 145px 16px 64px 16px;
-    }
-    
+        padding: 145px 20px 64px 20px;
+    }   
 }
 
 .title-box {

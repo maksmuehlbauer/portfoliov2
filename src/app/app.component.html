@@ -1,13 +1,9 @@
 <div class="page-container">
         <div class="content-wrap">
             <div class="desk-max-width">
-            
-            @if (isLargeScreen || menuIsVisible) {
-            <div class="lang-container-desktop">
-                <div (click)="toggleLanguage()" class="btn-lang">{{ 'LANGBTN.LANG' | translate}}</div>
-            </div>
-            }
-            
+                <div class="lang-container-desktop mobile-extension" [ngClass]="{'trans-right': menuIsVisible}">                    
+                    <div (click)="toggleLanguage()" class="btn-lang">{{ 'LANGBTN.LANG' | translate}}</div>
+                </div>            
             </div>
             <app-navigation></app-navigation>
             <router-outlet />

@@ -17,7 +17,6 @@ import { Subscription } from 'rxjs';
 export class AppComponent implements OnInit {
   title = 'portfolio';
   currentLanguage: string = 'en';
-  breakpointXXL: number = 1440;
   menuIsVisible: boolean = false;
   private menuSubscription!: Subscription;
   public isLargeScreen: boolean = false
@@ -32,16 +31,7 @@ export class AppComponent implements OnInit {
       isOpen => {this.menuIsVisible = isOpen})
     this.translate.addLangs(['de', 'en']);
     this.translate.use('en');
-    this.checkScreensize();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event): void  {
-    this.checkScreensize()
-  }
-
-  checkScreensize(): void {
-    this.isLargeScreen = window.innerWidth > this.breakpointXXL;
+    // this.checkScreensize();
   }
 
   ngOnDestroy(){

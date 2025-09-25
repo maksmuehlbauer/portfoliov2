@@ -12,8 +12,8 @@
     @include display();
     flex-direction: column;
     gap: 62px;
-    @media (max-width: $breakpoint-lg) {
-        padding: 48px 0 48px 0;
+    @media (max-width: $breakpoint-xl) {
+        padding: 48px 40px;
     }
 }
 

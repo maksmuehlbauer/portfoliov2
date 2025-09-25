@@ -170,7 +170,7 @@ textarea {
 }
 
 .check-box {
-    width: 617px;
+    width: auto;
     @include display($jc: flex-start, $ai: flex-start);
     gap: 8px;
     position: relative;
@@ -182,7 +182,7 @@ textarea {
     :hover {
         cursor: pointer;
     }
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-xl) {
         width: 100%;
     }
 }

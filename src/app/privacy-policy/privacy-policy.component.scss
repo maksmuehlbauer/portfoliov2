@@ -3,7 +3,10 @@
 .main-content-box {
     margin-top: 120px;
     position: relative;
-    @media (max-width: $breakpoint-lg) {
+    @media (max-width: $breakpoint-xxl) {
+        padding: 0 40px;
+    }
+    @media (max-width: $breakpoint-md) {
         padding: 0 20px;
     }
 }

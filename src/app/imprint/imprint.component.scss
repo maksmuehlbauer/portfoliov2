@@ -4,12 +4,9 @@
     margin-top: 120px;
     position: relative;
     @media (max-width: $breakpoint-xxl) {
-        padding: 0 20px;
+        padding: 0 40px;
     }
     @media (max-width: $breakpoint-md) {
-        padding: 0 0px;
-    }
-    @media (max-width: $breakpoint-sm) {
         padding: 0 20px;
     }
 }
